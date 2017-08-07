@@ -4,12 +4,18 @@ class Funcionario {
     private double salario;
     private Data dataEntrada;
     private String rg;
+    private static int identificador;
 
     public Funcionario() {
+	this.identificador++;
     }
 
     public Funcionario(String nome) {
 	this.nome = nome;
+    }
+
+    public int getIdentificador() {
+	return this.identificador;
     }
 
     public String getNome() {
@@ -61,6 +67,7 @@ class Funcionario {
     }
 
     public void mostrar() {
+	System.out.println("Idenrificador: " + this.getIdentificador());
 	System.out.println("Nome: " + this.getNome());
 	System.out.println("Departamento: " + this.getDepartamento());
 	System.out.println("Salário: " + this.getSalario());
