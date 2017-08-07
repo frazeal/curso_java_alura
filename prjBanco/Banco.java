@@ -4,10 +4,10 @@ class Banco {
     private Funcionario[] funcionarios;
     private int totalFuncionarios;
     
-    Banco(String nome, String cnpj) {
+    Banco(String nome, String cnpj, int quantidadeFuncionarios) {
 	this.nome = nome;
 	this.cnpj = cnpj;
-	this.totalFuncionarios = 0;
+	this.funcionarios = new Funcionario[quantidadeFuncionarios];
     }
 
     public void cadastrarFuncionario(Funcionario f) {

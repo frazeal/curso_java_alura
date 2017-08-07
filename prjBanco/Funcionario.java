@@ -5,6 +5,13 @@ class Funcionario {
     private Data dataEntrada;
     private String rg;
 
+    public Funcionario() {
+    }
+
+    public Funcionario(String nome) {
+	this.nome = nome;
+    }
+
     public String getNome() {
 	return nome;
     }
