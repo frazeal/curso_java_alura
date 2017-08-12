@@ -1,5 +1,5 @@
 public class Conta {
-	private double saldo;
+	protected double saldo;
 
 	public double getSaldo() {
 		return this.saldo;
