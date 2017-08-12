@@ -1,0 +1,15 @@
+class Conta {
+    private double saldo;
+
+    void getSaldo(double saldo) {
+	this.saldo = saldo;
+    }
+
+    void deposita(double valor) {
+	this.saldo += saldo;
+    }
+
+    void saca(double valor) {
+	this.saldo -= valor;
+    }
+}

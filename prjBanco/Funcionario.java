@@ -1,10 +1,10 @@
 class Funcionario {
-    private String nome;
-    private String departamento;
-    private double salario;
-    private Data dataEntrada;
-    private String rg;
-    private static int identificador;
+    protected String nome;
+    protected String departamento;
+    protected double salario;
+    protected Data dataEntrada;
+    protected String rg;
+    protected static int identificador;
 
     public Funcionario() {
 	this.identificador++;
@@ -73,5 +73,9 @@ class Funcionario {
 	System.out.println("Salário: " + this.getSalario());
 	System.out.println("Data de entrada: " + this.getDataEntrada().getDataFormatada());
 	System.out.println("RG: " + this.getRg());
+    }
+
+    public double getBonificacao() {
+	return this.salario * 0.10;
     }
 }
