@@ -10,7 +10,7 @@ class Conta {
     }
 
     public void deposita(double valor) {
-	this.saldo += saldo;
+	this.saldo += valor;
     }
 
     public void saca(double valor) {
