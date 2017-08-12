@@ -1,0 +1,5 @@
+class ContaPoupanca extends Conta {
+    public void atualiza(double taxa) {
+	this.saldo *= (1 + 3 * taxa);
+    }
+}
