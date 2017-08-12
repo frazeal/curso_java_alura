@@ -1,6 +1,7 @@
 
 public class ContaCorrente extends Conta {
+	@Override
 	public void atualiza(double taxa) {
-		this.saldo *= (1 + 2 * taxa);
+		super.atualiza(2 * taxa);
 	}
 }
