@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
 	protected double saldo;
 
 	public double getSaldo() {
@@ -9,16 +9,10 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-	public void deposita(double valor) {
-		this.setSaldo(this.getSaldo() + valor);
-	}
+	public abstract void deposita(double valor);
 	
-	public void saca(double valor) {
-		this.saldo -= valor;
-	}
+	public abstract void saca(double valor);
 	
-	public void atualiza(double taxa) {
-		this.saldo *= (1 + taxa);
-	}
+	public abstract void atualiza(double taxa);
 
 }
