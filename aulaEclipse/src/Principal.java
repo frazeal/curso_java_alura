@@ -1,7 +1,7 @@
 
 public class Principal {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ValorInvalidoException {
 		Conta conta = new ContaCorrente();
 		try {
 			conta.deposita(100.0);

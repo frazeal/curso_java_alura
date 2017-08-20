@@ -9,7 +9,7 @@ public abstract class Conta {
 		this.saldo = saldo;
 	}
 
-	public abstract void deposita(double valor);
+	public abstract void deposita(double valor) throws ValorInvalidoException;
 	
 	public abstract void saca(double valor);
 	
