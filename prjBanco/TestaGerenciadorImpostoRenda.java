@@ -10,6 +10,6 @@ public class TestaGerenciadorImpostoRenda {
 		cc.deposita(100);
 		gerenciador.adicionar(cc);
 
-		System.out.printf("O saldo é: %.2f", gerenciador.getTotal());
+		System.out.printf("O saldo é: %.2f\n", gerenciador.getTotal());
 	}
 }
