@@ -13,7 +13,7 @@ public class Principal {
 		try {
 			cp.deposita(-1000);
 		} catch (ValorInvalidoException e) {
-			System.out.println("Valor inválido passado como parâmetro.");
+			System.out.println(e.getMessage());
 		}
 	}
 
