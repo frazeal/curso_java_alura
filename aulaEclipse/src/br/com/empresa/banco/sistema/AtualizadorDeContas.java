@@ -1,4 +1,7 @@
+package br.com.empresa.banco.sistema;
 import com.sun.javafx.image.impl.ByteIndexed.Getter;
+
+import br.com.empresa.banco.conta.Conta;
 
 public class AtualizadorDeContas {
 	private double saldoTotal = 0;
