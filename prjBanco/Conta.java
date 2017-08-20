@@ -1,23 +1,23 @@
-class Conta {
-    protected double saldo;
+public abstract class Conta {
+	protected double saldo;
 
-    public double getSaldo() {
-	return this.saldo;
-    }
-    
-    public void setSaldo(double saldo) {
-	this.saldo = saldo;
-    }
+	public double getSaldo() {
+		return this.saldo;
+	}
 
-    public void deposita(double valor) {
-	this.saldo += valor;
-    }
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
 
-    public void saca(double valor) {
-	this.saldo -= valor;
-    }
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
 
-    public void atualiza(double taxa) {
-	this.saldo *= (1 + taxa);
-    }
+	public void saca(double valor) {
+		this.saldo -= valor;
+	}
+
+	public void atualiza(double taxa) {
+		this.saldo *= (1 + taxa);
+	}
 }
