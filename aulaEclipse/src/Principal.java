@@ -12,8 +12,8 @@ public class Principal {
 		Conta cp = new ContaPoupanca();
 		try {
 			cp.deposita(-1000);
-		} catch (IllegalArgumentException e) {
-			System.out.println(e.getMessage());
+		} catch (ValorInvalidoException e) {
+			System.out.println("Valor inválido passado como parâmetro.");
 		}
 	}
 
