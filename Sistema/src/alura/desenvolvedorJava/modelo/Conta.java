@@ -4,10 +4,17 @@ import alura.desenvolvedorJava.excecoes.ValorInvalidoException;
 
 public abstract class Conta {
 	protected double saldo;
+	protected int numero;
 
 	public Conta(double saldo) {
 		// TODO Auto-generated constructor stub
 		this.saldo = saldo;
+	}
+	
+	public Conta(double saldo, int numero) {
+		// TODO Auto-generated constructor stub
+		this.saldo = saldo;
+		this.numero = numero;
 	}
 
 	public double getSaldo() {
@@ -35,7 +42,7 @@ public abstract class Conta {
 			return false;
 		}
 		Conta outra = (Conta) obj;
-		return this.saldo == outra.saldo;
+		return this.numero == outra.numero;
 	}
 
 }

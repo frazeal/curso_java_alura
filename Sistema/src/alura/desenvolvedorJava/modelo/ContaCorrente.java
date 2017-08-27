@@ -9,6 +9,11 @@ public class ContaCorrente extends Conta {
 		// TODO Auto-generated constructor stub
 	}
 
+	public ContaCorrente(double saldo, int numero) {
+		// TODO Auto-generated constructor stub
+		super(saldo, numero);
+	}
+
 	@Override
 	public void atualiza(double taxa) {
 		this.saldo *= 1 + 2 * taxa;
