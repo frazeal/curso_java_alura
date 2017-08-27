@@ -1,7 +1,8 @@
-package aulaInterface;
+package alura.desenvolvedorJava.modelo;
+
+import alura.desenvolvedorJava.interfaces.Autenticavel;
 
 public class Diretor extends Funcionario implements Autenticavel {
-
 	@Override
 	public double getBonificacao() {
 		return this.salario * 0.35;

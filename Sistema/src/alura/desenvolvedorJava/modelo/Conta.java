@@ -28,5 +28,14 @@ public abstract class Conta {
 	public String toString() {
 		return "Conta com saldo " + this.saldo;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Conta)) {
+			return false;
+		}
+		Conta outra = (Conta) obj;
+		return this.saldo == outra.saldo;
+	}
 
 }

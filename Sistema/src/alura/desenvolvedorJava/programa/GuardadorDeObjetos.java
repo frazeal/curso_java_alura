@@ -6,9 +6,9 @@ public class GuardadorDeObjetos {
 	private Object[] contas;
 	private int posicaoLivre;
 	
-	public void adicionarObjeto(Object nova) {
-		this.contas[posicaoLivre] = nova;
-		posicaoLivre++;
+	public void adicionarObjeto(Object novo) {
+		this.contas[this.posicaoLivre] = novo;
+		this.posicaoLivre++;
 	}
 	
 	public Object pega(int posicao) {
@@ -16,7 +16,7 @@ public class GuardadorDeObjetos {
 	}
 	
 	public GuardadorDeObjetos() {
-		this.contas = new Conta[100];
+		this.contas = new Object[100];
 		this.posicaoLivre = 0;
 	}
 }
