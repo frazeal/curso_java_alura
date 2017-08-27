@@ -1,7 +1,5 @@
 package alura.desenvolvedorJava.programa;
 
-import alura.desenvolvedorJava.modelo.Conta;
-
 public class GuardadorDeObjetos {
 	private Object[] contas;
 	private int posicaoLivre;

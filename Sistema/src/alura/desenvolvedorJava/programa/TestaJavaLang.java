@@ -15,7 +15,7 @@ public class TestaJavaLang {
 		armario.adicionarObjeto(c1);
 		armario.adicionarObjeto(c2);
 		
-		Cliente joao = new Cliente();
+		Cliente joao = new Cliente("joao", "são paulo");
 		armario.adicionarObjeto(joao);
 		
 		Conta c1NoArmario = (Conta) armario.pega(0);

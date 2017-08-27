@@ -5,6 +5,7 @@ import alura.desenvolvedorJava.excecoes.ValorInvalidoException;
 public abstract class Conta {
 	protected double saldo;
 	protected int numero;
+	protected Cliente titular;
 
 	public Conta(double saldo) {
 		// TODO Auto-generated constructor stub
@@ -24,6 +25,14 @@ public abstract class Conta {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
 
 	public abstract void deposita(double valor) throws ValorInvalidoException;
 
@@ -42,7 +51,11 @@ public abstract class Conta {
 			return false;
 		}
 		Conta outra = (Conta) obj;
-		return this.numero == outra.numero;
+		return ((this.numero == outra.numero) && (this.getTitular().getNome().equals(outra.getTitular().getNome())));
+	}
+	
+	public void teste(Conta outra) {
+		System.out.println();
 	}
 
 }

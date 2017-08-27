@@ -4,7 +4,7 @@ import java.io.PrintStream;
 
 public class TestaInteger {
 
-	private static PrintStream saida;
+	//private static PrintStream saida;
 
 	public static void main(String[] args) {
 		
@@ -17,7 +17,7 @@ public class TestaInteger {
 			System.out.println("diferente");
 		}
 		
-		saida = System.out;
+		//saida = System.out;
 		
 	}
 
