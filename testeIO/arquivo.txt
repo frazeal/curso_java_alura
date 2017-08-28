@@ -1,0 +1,4 @@
+Vamos testar agora
+como ler o texto
+armazenado num arquivo
+que possui várias linhas!
