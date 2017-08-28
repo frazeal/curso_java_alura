@@ -3,10 +3,12 @@ package alura.desenvolvedorJava.programa;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class TestaJavaUtil {
 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
