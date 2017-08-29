@@ -14,7 +14,6 @@ public class TestaComparacaoContas {
 		c1.setTitular(cli);
 		c2.setTitular(cli);
 		
-		c1.teste(c2);
 		
 		if (c1 == c2) {
 			System.out.println("As contas são iguais");

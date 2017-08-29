@@ -2,7 +2,7 @@ package alura.desenvolvedorJava.modelo;
 
 import alura.desenvolvedorJava.excecoes.ValorInvalidoException;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta>{
 	protected double saldo;
 	protected int numero;
 	protected Cliente titular;
@@ -53,9 +53,14 @@ public abstract class Conta {
 		Conta outra = (Conta) obj;
 		return ((this.numero == outra.numero) && (this.getTitular().getNome().equals(outra.getTitular().getNome())));
 	}
-	
-	public void teste(Conta outra) {
-		System.out.println();
+
+	@Override
+	public int compareTo(Conta outra) {
+		if (this.saldo < outra.saldo) { return -1; }
+		if (this.saldo > outra.saldo) { return 1; }
+		return 0;
 	}
+	
+	
 
 }
