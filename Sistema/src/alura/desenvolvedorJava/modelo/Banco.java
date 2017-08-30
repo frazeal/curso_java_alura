@@ -1,18 +1,20 @@
 package alura.desenvolvedorJava.modelo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Banco {
 
-	private List<Conta> contas = new ArrayList<Conta>();
+	private Map<String, Conta> contas = new HashMap<String, Conta>();
 	
 	public void adicionarConta(Conta c) {
-		this.contas.add(c);
+		this.contas.put(c.getTitular().getNome(), c);
 	}
 	
-	public Conta retornarConta(int x) {
-		return this.contas.get(x);
+	public Conta buscarPorNome(String nome) {
+		return this.contas.get(nome);
 	}
 	
 	public int retornarQuantidadeDeContas() {
