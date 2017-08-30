@@ -54,12 +54,27 @@ public abstract class Conta implements Comparable<Conta>{
 	}
 	
 	@Override
-	public boolean equals(Object obj) {
-		if (!(obj instanceof Conta)) {
-			return false;
-		}
-		Conta outra = (Conta) obj;
-		return ((this.numero == outra.numero) && (this.getTitular().getNome().equals(outra.getTitular().getNome())));
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + this.numero;
+		return result;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (numero != other.numero)
+			return false;
+		return true;
+	}
+	
+	
 
 }
