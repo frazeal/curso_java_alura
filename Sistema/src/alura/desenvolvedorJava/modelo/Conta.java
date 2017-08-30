@@ -62,11 +62,4 @@ public abstract class Conta implements Comparable<Conta>{
 		return ((this.numero == outra.numero) && (this.getTitular().getNome().equals(outra.getTitular().getNome())));
 	}
 
-	@Override
-	public int compareTo(Conta outra) {
-		return this.getNumero() - outra.getNumero();
-	}
-	
-	
-
 }

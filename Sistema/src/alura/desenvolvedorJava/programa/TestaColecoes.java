@@ -11,6 +11,7 @@ import java.util.Set;
 
 import alura.desenvolvedorJava.modelo.Conta;
 import alura.desenvolvedorJava.modelo.ContaCorrente;
+import alura.desenvolvedorJava.modelo.ContaPoupanca;
 
 public class TestaColecoes {
 
@@ -35,8 +36,8 @@ public class TestaColecoes {
 		
 		List<Conta> contas = new ArrayList<Conta>();
 		
-		Conta c1 = new ContaCorrente(800);
-		Conta c2 = new ContaCorrente(700);
+		Conta c1 = new ContaPoupanca(800);
+		Conta c2 = new ContaPoupanca(700);
 		contas.add(c1);
 		contas.add(c2);
 		

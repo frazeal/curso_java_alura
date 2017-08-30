@@ -2,7 +2,7 @@ package alura.desenvolvedorJava.modelo;
 
 import alura.desenvolvedorJava.modelo.Conta;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Comparable<Conta>{
 
 	public ContaCorrente(double saldo) {
 		super(saldo);
@@ -31,6 +31,12 @@ public class ContaCorrente extends Conta {
 	@Override
 	public void saca(double valor) {
 		this.saldo -= valor;
+	}
+
+	@Override
+	public int compareTo(Conta outra) {
+		// TODO Auto-generated method stub
+		return this.getNumero() - outra.getNumero();
 	}
 
 }

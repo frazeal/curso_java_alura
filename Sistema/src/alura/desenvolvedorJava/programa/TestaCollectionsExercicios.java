@@ -1,4 +1,4 @@
-package alura.desenvolvedorJava.modelo;
+package alura.desenvolvedorJava.programa;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Random;
 
 import alura.desenvolvedorJava.excecoes.ValorInvalidoException;
+import alura.desenvolvedorJava.modelo.Cliente;
+import alura.desenvolvedorJava.modelo.ContaPoupanca;
 
 public class TestaCollectionsExercicios {
 
@@ -36,7 +38,7 @@ public class TestaCollectionsExercicios {
 
 		Collections.sort(contas);
 		for (ContaPoupanca conta : contas) {
-			System.out.println(conta);
+			System.out.println(conta.getTitular().getNome() + " : "+ conta.toString());
 		}
 		
 		System.out.println(contas);

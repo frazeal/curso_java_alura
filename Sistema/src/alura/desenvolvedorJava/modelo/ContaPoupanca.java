@@ -2,18 +2,17 @@ package alura.desenvolvedorJava.modelo;
 
 import alura.desenvolvedorJava.excecoes.ValorInvalidoException;
 
-public class ContaPoupanca extends Conta{
-	
+public class ContaPoupanca extends Conta implements Comparable<Conta> {
+
 	public ContaPoupanca(double saldo) {
 		super(saldo);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public ContaPoupanca(int numero, Cliente titular) {
 		this.numero = numero;
 		this.titular = titular;
 	}
-	
 
 	@Override
 	public void atualiza(double taxa) {
@@ -33,9 +32,9 @@ public class ContaPoupanca extends Conta{
 	public void saca(double valor) {
 		this.saldo -= valor;
 	}
-	
+
 	@Override
 	public int compareTo(Conta outra) {
-		return this.getNumero() - outra.getNumero();
+		return this.titular.getNome().compareTo(outra.titular.getNome());
 	}
 }
