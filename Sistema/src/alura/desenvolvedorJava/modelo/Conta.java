@@ -64,9 +64,7 @@ public abstract class Conta implements Comparable<Conta>{
 
 	@Override
 	public int compareTo(Conta outra) {
-		if (this.saldo < outra.saldo) { return -1; }
-		if (this.saldo > outra.saldo) { return 1; }
-		return 0;
+		return this.getNumero() - outra.getNumero();
 	}
 	
 	
