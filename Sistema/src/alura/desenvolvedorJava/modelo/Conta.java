@@ -6,6 +6,10 @@ public abstract class Conta implements Comparable<Conta>{
 	protected double saldo;
 	protected int numero;
 	protected Cliente titular;
+	
+	protected Conta() {
+		
+	}
 
 	public Conta(double saldo) {
 		// TODO Auto-generated constructor stub
@@ -32,6 +36,10 @@ public abstract class Conta implements Comparable<Conta>{
 	
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
+	}
+	
+	public int getNumero() {
+		return this.numero;
 	}
 
 	public abstract void deposita(double valor) throws ValorInvalidoException;
